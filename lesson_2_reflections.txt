@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to do it?
+-"git init" will initialize a directory to become a repository. when git init initializes a repository it adds a .git folder which contains meta data about the repository.
+-we need to initialize a directory as a git repository so that the git bash can execute commands considering the directory as a repository
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+-staging area is the intermediary between a working directory and a commit to repository. once we add a file to staging area we are sure that the file has a logical change and not the other files in the working directory. so when we commit the repository later on, git will know only to allow the changed file to update.
