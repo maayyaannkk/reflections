@@ -1,0 +1,27 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+-i have learnt that we should use version control in software so that it is easy to ammend mistakes caused in the new version and we can revert back to the previous working version in short time.
+-some softwares or command line tools can help with quick recovery of the error and where and what caused the particular problem.
+-for windows a quick lookup for line number change or typo can be found by using FC [old_file] [new_file]
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+-easy access to previous entries helps in checking out old code or content. as a developer , one tends to forget facts easily for eg. I cannot remember an essential part of javascript code that i had written a week ago and making changes to that will require me to study code again and understand it which will obviously become very time consuming.so easy access to entire history will help me get up to speed with the thinking process and logic that i wanted to or had implemented while writing the old code.very helpful and less time consuming.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+-manual commits can be important when we want to commit to code changes that are important to the development while automatically saved commits give you a lot of different files but it doesnt really mean all of them are working or are important.
+-automatic commits can be useful for content other than code since the thought process of the content's author can be viewed ata glance for better understanding and delivery of the new content
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+-this is because code files are interlinked with each other for eg. a webpage comprises of several javascript and css files into the html incorporating it into one single webpage. changing and commit only one file will either not produce the desired result or will corrupt the page itself.
+
+How can you use the commands git log and git diff to view the history of files?
+-"git log" logs in all the commits happened to the project with the commit ids which is basically a 32bit hash of the entire project.
+-"git diff [prev_id] [this_id]" lists all the change that has happened in this commit from the previous commit 
+-"git config --global color.ui auto"
+
+How might using version control make you more confident to make changes that could break something?
+-very confident, before using git i would make changes to code just to fix one bug not taking into account that this change could induce another bug.using commits and git log it is very easy to find out changes that were made and cause of the new bug.
