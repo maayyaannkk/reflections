@@ -4,3 +4,20 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository? and What value do you think it offers?
 -staging area is the intermediary between a working directory and a commit to repository. once we add a file to staging area we are sure that the file has a logical change and not the other files in the working directory. so when we commit the repository later on, git will know only to allow the changed file to update.
+
+How can you use the staging area to make sure you have one commit per logical change?
+-a logical change doesnt really mean that the every file in the repository was changed to make this logical change. a single file change could implement this logical change too. so putting only the file responsible for the change into the staging area and then making the commit seems a reliable solution.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+-branch are an excellent feature og git to test out new features of our project. branches help us to create version that are not related to the master version in a direct way.
+
+How do the diagrams help you visualize the branch structure?
+-diagrams help us to graphically view the hierarchy that is the git branch structure. without diagrams we would just be figuring out the hierarchy connecting commits to their parents.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+-git has this automatic merge system which will merge two different branches to become one branch and the commits from the previous branch nodes will merge into one so that features from both the commits will reflect in the new commit.
+-it has to represented in this way because git does not keep track of braches in particular rather it keeps track of parents of commits.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+-git automatic merging is very useful when there is no conflict. git specifies if there is a conflict and we should resolve it before making a commit.
+-manual merge will take a lot of time and would be useless because another person would have to go through all the code to merge the changes into it. time consuming
