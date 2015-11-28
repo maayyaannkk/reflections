@@ -1,2 +1,19 @@
 When would you want to use a remote repository rather than keeping all your work local?
 -remotes are a great way of collaborating a project with your team members.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+-i may not want my current commit changed just beacuse it changed on the server.maybe some important changes might be lost and i would not want to work on the new commit that was not made by me.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+-forks are a way to clone repositories into your github server via the github website.for eg. if you want to check and modify existing project of someone else you can fork it onto your own account first and then clone it.
+-clone is the same as forking, only difference is that it is done directly to your local via the command line and then on the commits will be saved locally only since the push location that is set will now allow you to collaborate. for eg. someone else will not allow you to push commits into their project unless they have set you as a collaborator.
+-branches are different from both of these. braches work so that i can add experimental features and test with it without causing harm to the main master branch, if feature turns out to be good i can merge these branches to fine one master again.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+-so that we can write changes into the local without being bothered by conflicts being created while me merge or commit.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+-difficult to collaborate without git or github. making changes to code to be shared with and open to suggestions by other people involved would be hard.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+-to make pull requests it is better to first add a branch and make changes to it and then make a pull request so that the owner will have to merge conflicts as well as he will know that the new branch has something better to offer
